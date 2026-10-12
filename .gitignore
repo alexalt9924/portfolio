@@ -1,0 +1,8 @@
+# Python cache from the tools/ scripts
+__pycache__/
+
+# Temporary page copy written by tools/make_thumbnail.py (left behind only if it crashes)
+.thumbnail-snapshot.html
+
+# Local agent instructions
+CLAUDE.md

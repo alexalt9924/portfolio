@@ -15,3 +15,4 @@
 13. **GitHub:** pushed to `github.com/gibbynorton/artifact1` (placeholder commit email) and enabled GitHub Pages at `https://gibbynorton.github.io/artifact1/`.
 14. **Artifact 1 updates:** linked Source Code to the repo. Added `tools/make_thumbnail.py` to regenerate the preview image from a real Firefox screenshot.
 15. **Cleanup:** removed an unused font constant and added a `.gitignore`.
+16. **Artifact 2 takedown:** replaced the Artifact 2 description with a note that it was voluntarily taken down for compliance with US copyright law, and swapped its thumbnail for a new "Taken Down" image (`images/thumb_removed.gif`, drawn by `thumb_removed()` in `tools/make_graphics.py`). Kept the Visit and Source Code links.

@@ -303,6 +303,19 @@ def thumb_soon():
     save(img, "thumb_soon.gif")
 
 
+def thumb_removed():
+    w, h = 180, 110
+    img = Image.new("RGB", (w, h), "#000033")
+    d = draw_for(img)
+    bevel(d, (0, 0, w - 1, h - 1), "#000000", "#6666CC", "#000033")
+    for y in range(4, h - 4, 4):
+        d.line([(4, y), (w - 5, y)], fill="#000044")
+    d.rectangle((24, 36, w - 25, h - 37), fill="#330000", outline="#FF6666")
+    centered_text(d, (24, 36, w - 25, h - 37), "Taken Down", font(SANS_BOLD, 12),
+                  "#FFFF00", shadow="#000000", spacing=2)
+    save(img, "thumb_removed.gif")
+
+
 def photo():
     w, h = 120, 150
     img = Image.new("RGB", (w, h), "#333366")
@@ -350,6 +363,7 @@ def main():
     email()
     counter()
     thumb_soon()
+    thumb_removed()
     if not os.path.exists(os.path.join(OUT, "photo.gif")):  # don't clobber a real photo
         photo()
     favicon()
